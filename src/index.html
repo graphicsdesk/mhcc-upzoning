@@ -15,7 +15,14 @@
       rel="stylesheet"
     />
   </head>
-
+  <style>
+    .biggraphic{
+      position:absolute;
+    }
+    .smallgraphic{
+      position:absolute;
+    }
+  </style>
   <body>
     <include src="partials/navbar.html"></include>
 
@@ -57,8 +64,13 @@
           </case>
           <case n="'graphic'">
             <div class="graphic">
-              <if condition="item.value.asset === 'graphic-name.html'">
-                <include src="graphic-name.html"></include>
+              <if condition="item.value.asset === 'final-upzoning-pictogram.html'">
+                <include src="final-upzoning-pictogram.html"></include>
+              </if>
+            </div>
+            <div class="graphic">
+              <if condition="item.value.asset === 'planscrolly.html'">
+                <include src="planscrolly.html"></include>
               </if>
             </div>
           </case>
